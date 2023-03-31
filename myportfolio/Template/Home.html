@@ -1,0 +1,290 @@
+{% extends 'Base.html' %}
+{% load static %}
+{% block content %}
+{% include 'header.html' %}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<div id="Home" class="banner-area section-padding">
+    <div class="bg-overlay black"></div>
+    <div class="container-1  ">
+        <div class="row">
+            <div class="col-md-24">
+                <div class="welcome-text">
+                   <nobr> <div class="word"></div> </nobr>
+                </div>
+
+                <div class="words">
+                    <div class=" offset-md-12">
+                        <nobr><h3 style="color: white;"> A Professional <span style="color: yellow;">Web Developer </span>And <span style="color: purple;">Graphic</span>Designer</h3></nobr>
+
+                    </div>
+
+                        <div class="social">
+                            <a style="padding-left:50px;" href='https://facebook.com/EJYolloh'><i class="fa fa-facebook" id="facebook"></i></a>
+                             <a style="padding-left:50px;" href='https://twitter.com/EJYolloh'><i class="fa fa-twitter" id="twitter"></i></a>
+                             <a style="padding-left:50px;" href='https://instagram.com/eddie_edisters'><i class="fa fa-instagram" id="insta"></i></a>
+                             <a style="padding-left:50px;" href='https://gmail.com/EDDIENDAMERA'><i class="fa fa-envelope" id="mail"></i></a>
+                            <a style="padding-left:50px;" href='https://github.com/Eddie399'><i class="fa fa-github" id="git"></i></a>
+
+
+                        </div>
+
+
+                 </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</div>
+
+<div class="container">
+  <svg viewBox="0 0 960 300">
+    <symbol id="s-text">
+
+      <text text-anchor="middle" x="60%" y="80%">EDISTER</text>
+    </symbol>
+
+    <g class = "g-ants">
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+      <use xlink:href="#s-text" class="text-copy"></use>
+    </g>
+  </svg>
+</div>
+
+
+
+
+<!-- About me -->
+<br>
+
+
+<div class="container" id="About">
+    <div class="col-md-7 col-sn-8 col-xn-12 wow fadeInLeft" data-wow-display="0.2s">
+        <div class="about-left">
+           <nobr> <h2 class="section-title">ABOUT ME</h2></nobr>
+            <div class="line"></div>
+            <h4>{{ about.short_description }}</h4>
+            <p>{{ about.description }}</p>
+        </div>
+        <div class="images"><img src="{% static 'images/v21.jpg' %}" alt="picture"></div>
+    </div>
+
+    <div class="details">
+        <i class="fa fa-chevron-right" style="padding-left: 50%;"> <span class="span">Name: </span>EDISTER NDAMERA</i>
+        <i class="fa fa-chevron-right" style="padding-left: 50%;"> <span class="span">Phone: </span>+265 888 030 809</i>
+        <i class="fa fa-chevron-right" style="padding-left: 50%;"> <span class="span">City: </span>BLANTYRE</i>
+        <i class="fa fa-chevron-right" style="padding-left: 50%;"> <span class="span">Email: </span>eddiendamera1@gmail.com</i>
+    </div>
+
+     <div class="details_right">
+        <i class="fa fa-chevron-right" style="padding-left: 50%;"> <span class="span">Brand: </span>Pixel-Perfect Lab</i>
+      <nobr>  <i class="fa fa-chevron-right" style="padding-left: 50%;"> <span class="span">Degree: </span>Computer Science</i></nobr>
+    </div>
+
+
+
+
+</div>
+
+<div>
+    <div class="skills">
+        <h3>My Skills</h3>
+
+    </div>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped active" role="progressbar"
+      aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+        HTML
+      </div>
+    </div>
+    <br>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped active" role="progressbar"
+      aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+        PYTHON
+      </div>
+    </div>
+    <br>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped active" role="progressbar"
+      aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+        CSS
+      </div>
+    </div>
+    <br>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped active" role="progressbar"
+      aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:20%">
+        JAVASCRIPT
+      </div>
+    </div>
+</div>
+
+<hr>
+
+<section class="container--1" id="Resume">
+    <div class="col-md-12">
+        <div class="top">
+            <h2 class="section-title">MY RESUME</h2>
+            <div class="wrap">
+          <div class="col col1"></div>
+          <div class="col col2">
+            <div class="circle circle1">
+              <h2><span><b>Education</b> <i>Degree</i></span></h2>
+              <div class="shim shim1"></div>
+            </div>
+            <div class="content">
+                <h3 style="color:#29bdcc">BSc Computer Science</h3>
+                <h5 style="color:#29bdcc">DMI-St John The Baptist University</h5>
+
+              <p>Draft explanatory statements and a notice of meeting to shareholders</p>
+            </div>
+          </div>
+          <div class="col col1">
+            <div class="circle circle2">
+              <h2><span><b>Education</b> <i>note</i></span></h2>
+              <div class="shim shimx shim2"></div>
+            </div>
+            <div class="content">
+                <h3 style="color:#17556f;">Advanced Diploma in Telecommunications</h3>
+                <h5 style="color:#17556f;">MUBAS(City & Guilds)</h5>
+              <p>Companies must lodge annual reports within 3 months of the end of the financial year</p>
+            </div>
+          </div>
+          <div class="col col2"></div>
+          <div class="col col1"></div>
+          <div class="col col2">
+            <div class="circle circle3">
+              <h2><span><b>Experience</b> <i>note</i></span></h2>
+              <div class="shim shim3"></div>
+            </div>
+            <div class="content">
+                <h3 style="color:#f58c31;">Other Skills</h3>
+                <h5 style="color: #f58c31;">Fibre Network Technician</h5>
+              <p>I worked with Fibre Optic Solutions for 1 year as a Fibre Technician.
+              Some of my roles include Fibre splicing,OTDR testing.</p>
+            </div>
+          </div>
+          <div class="col col1">
+            <div class="circle circle4">
+              <h2><span><b>Experience</b> <i>note</i></span></h2>
+              <div class="shim shimx shim4"></div>
+            </div>
+            <div class="content">
+                <h3 style="color:#ed4565;">Graphic Design</h3>
+                <h5 style="color:#ed4565;">UI/UX DESIGNER</h5>
+              <p>I am a passionate graphic designer.Let us design your Websites,Flyer's,Social-media-post and Posters just to mention a few.</p>
+            </div>
+          </div>
+          <div class="col col2"></div>
+          <div class="col col1"></div>
+          <div class="col col2">
+            <div class="circle circle5">
+              <h2><span><b>Experience</b> <i>note</i></span></h2>
+              <div class="shim shim5"></div>
+            </div>
+            <div class="content">
+                <h3 style="color:#f0b224;">Web Development</h3>
+                <h5 style="color: #f0b224;">Python (Django)Developer</h5>
+              <p>A professional Web developer with 2 years experience in web development using Django(Python)</p>
+            </div>
+          </div>
+          <div class="col col1">
+            <div class="circle circle6">
+              <h2><span><b>Explanatory</b> <i>note</i></span></h2>
+              <div class="shim shimx shim6"></div>
+            </div>
+            <div class="content">
+                <h3 style="color: #1eb473;">Summary</h3>
+                <h5 style="color: #1eb473;">Edister Ndamera</h5>
+                <p>Innovative and date driven Developer& Graphic Designer with 2yrs of experience in designing and developing user
+              centered digital marketing matrials</p>
+            </div>
+          </div>
+          <div class="col col2"></div>
+          <div class="col col1"></div>
+                <div class="col col2"></div>
+            </div>
+        </div>
+    </div>
+
+            <div>
+               <a href="downloadFile"><button class="btn"><i class="fa fa-download"></i>Download CV</button></a>
+            </div>
+</section>
+
+
+<br>
+<br>
+<br><br><br>
+<hr class="pj" style="top: 90%;">
+
+<section class="container" id="Projects">
+    <div class="top">
+        <div class="col-md-16">
+           <nobr> <h2 class="page" >MY PROJECTS</h2></nobr>
+        </div>
+
+    </div>
+
+    <div class="project--wrapper">
+        {% for work in works %}
+        <div class="project--column">
+            <a href="{{ work.get_absolute_url }}">     <!--  {{ work.get_absolute_url }}   -->
+            <img class="project--thumbnail" src="{{ work.image.url }}" alt="">
+            </a>
+            <div class="project--body">
+                <h5>{{ work.title }}</h5>
+                <hr>
+                <h6>{{ work.description }}</h6>
+            </div>
+        </div>
+        {% empty %}
+        <h3>No recent projects</h3>
+        {% endfor %}
+    </div>
+
+
+
+</section>
+
+<hr>
+
+
+<div class="container" id="Contact">
+    <div class="contact-section">
+        <div class="contact-info">
+            <div><i class="fa fa-map-marker"> Blantyre</i>
+                Machinjiri
+            </div>
+            <div><i class="fa fa-envelope"> eddiendamera1@gmail.com</i></div>
+            <div><i class="fa fa-phone"> +256 888 030 809</i></div>
+            <div><i class="fa fa-clock-o"> Mon-Fri 24/7</i></div>
+        </div>
+    </div>
+
+    <div class="contact-form">
+        <nobr><h4>CONTACT ME</h4></nobr>
+        <form class="contact" method="POST" action="{% url 'contact'%}">
+            {% csrf_token %}
+            <input type="text" name="name" class="text-box" placeholder="Your Name" required>
+            <input type="email" name="email" class="text-box" placeholder="Your email" required>
+            <textarea name="message" rows="5" placeholder="your message" required></textarea>
+            <input type="text" name="subject" placeholder="subject" required class="text-box-1">
+            <input type="submit" name="submit" class="send-btn" value="send">
+        </form>
+    </div>
+
+</div>
+
+{% include 'footer.html' %}
+
+{% endblock%}

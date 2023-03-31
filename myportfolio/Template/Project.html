@@ -1,0 +1,43 @@
+
+{% load static %}
+{% block content %}
+
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>{% block title %}{% endblock %} Project</title>
+
+<div class="container--3" style="">
+    <img class="project_image" src="{{ project.image.url }}">
+<br><br><br><br><br>
+
+    <h1>{{project.title}}</h1>
+
+    <hr>
+    <p>{{ project.description }}</p>
+    <div class="link">
+        <h3>LINKS</h3>
+        {{project.title}}:
+    </div>
+
+</div>
+
+
+
+{% endblock content%}
+<br><br><br>
+{% include 'footer.html' %}
+
+<style>
+body{
+    background-color: milk;
+}
+
+    .container--3{
+    max-width: 960px;
+    margin: auto;
+}
+
+.project_image {
+    width: 350px;
+}
+</style>
